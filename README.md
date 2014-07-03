@@ -9,7 +9,6 @@ This is the repository for the [scotch.io tutorial](http://scotch.io/tutorials/p
 3. Change your database settings in `app/config/database.php`
 4. If applicable, add your chosen database to php.ini to ensure PDO errors don't happen in the next step.
   - If using SQLite, you will need to run 'apt-get install php5-sqlite'
-  - Also, add the following to etc/php5/conf.d/sqlite.ini: extension=sqlite.so
 5. Migrate your database: `php artisan migrate`
 6. Seed your database: `php artisan db:seed`
 7. View your application in browser.
