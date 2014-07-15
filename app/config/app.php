@@ -106,7 +106,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-
+        'LRezek\Neo4Laravel\Neo4LaravelServiceProvider',
 	),
 
 	/*
@@ -171,7 +171,8 @@ return array(
 		'Str'             => 'Illuminate\Support\Str',
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
-		'View'            => 'Illuminate\Support\Facades\View',
+        'View'            => 'Illuminate\Support\Facades\View',
+        'Neo4j'           => 'LRezek\Neo4Laravel\Neo4LaravelServiceProvider',
 
 	),
 
