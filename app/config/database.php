@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'neo4j',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -81,10 +81,24 @@ return array(
 			'username' => 'root',
 			'password' => '',
 			'prefix'   => '',
-		),
+        ),
 
-	),
+        'neo4j' => array(
+            'transport' => 'curl',
+            'host' => 'localhost',
+            'port' => '7474',
+            'debug' => true,
+            'proxy_dir' => '/tmp',
+            'cache_prefix' => 'neo4j',
+            'meta_data_cache' => 'array',
+            'annotation_reader' => null,
+            'username' => null,
+            'password' => null,
+            'pathfinder_algorithm' => null,
+            'pathfinder_maxdepth' => null
+        ),
 
+    ),
 	/*
 	|--------------------------------------------------------------------------
 	| Migration Repository Table
